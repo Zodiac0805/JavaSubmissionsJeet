@@ -1,0 +1,17 @@
+package com.Assignments;
+
+import java.util.HashMap;
+
+public class No_69 {
+    public static void main(String[] args) {
+        HashMap hm = new HashMap<>();
+          
+        hm.put(0,"Rutuj");
+        
+        if (hm.isEmpty()) {
+            System.out.println("The Hashmap is empty.");
+        } else {
+            System.out.println("The Hashmap is not empty.");
+        }
+    }
+}

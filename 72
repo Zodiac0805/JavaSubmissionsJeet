@@ -1,0 +1,27 @@
+package com.Assignments;
+
+import java.util.ArrayList;
+
+
+public class No_72 {
+	public static void main(String[] args) {
+		ArrayList<String> a1 = new ArrayList<>();
+	
+		System.out.println("Default value is..."+a1);
+		
+		a1.add("Black");
+		a1.add("Blue");
+		a1.add("Red");
+		a1.add("Yellow");
+		a1.add("White");
+		a1.add("Green");  
+		
+		System.out.println("Colours in the array list are..."+a1);
+		
+		 for (int i = 0; i < a1.size(); i++) {
+	            System.out.println(i + " is... " + a1.get(i));
+	        }
+	
+	}
+
+}

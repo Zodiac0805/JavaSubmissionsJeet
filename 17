@@ -1,0 +1,12 @@
+package com.Assignments;
+
+public class No_17 {
+	public static void main(String[] args) {
+		String st = "Red is my favourite colour";
+		String str = "Orange is my favourite colour";
+		
+		boolean end = st.startsWith(str);
+		System.out.println(end);
+	}
+
+}

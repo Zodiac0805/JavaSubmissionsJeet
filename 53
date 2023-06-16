@@ -1,0 +1,39 @@
+package com.Assignments;
+
+import java.util.ArrayList;
+
+
+public class No_53 {
+	public static void main(String[] args) {
+		ArrayList a1 = new ArrayList();
+	
+		System.out.println("Default value is..."+a1);
+		
+		a1.add("Black");
+		a1.add("Blue");
+		a1.add("Red");
+		a1.add("Yellow");
+		a1.add("White");
+		a1.add("Green");  
+		
+		System.out.println("Colours in the array list are..."+a1);
+		
+		a1.add(0,"Purple");
+		a1.set(3, "Orange");
+	
+        String search = "Yellow";
+        		
+		if(a1.contains(search)) {
+			System.out.println("The specified element found at "+a1.indexOf(search));
+		}else {
+			System.out.println("Specified element not found");
+		}
+		
+		
+		System.out.println("Now size is..."+a1.size());
+		System.out.println("Colours in the array list now are..."+a1);
+		
+	
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.Assignments;
+
+import java.util.HashMap;
+
+
+public class No_60 {
+	public static void main(String[] args) {
+		HashMap hm = new HashMap();
+	
+		System.out.println("Default value is..."+hm);
+		
+		hm.put(1,"Black");
+		hm.put("Blue",3);
+		hm.put(2,"Red");
+		hm.put(4,"Yellow");
+		hm.put("White",6);
+		hm.put(5,"Green");  
+		
+		System.out.println("Colours in the HashMap are..."+hm);
+		
+		hm.put(7, "Orange");
+		
+		System.out.println("Colours in the HashMap now are..."+hm);
+		
+	
+	}
+
+}

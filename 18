@@ -1,0 +1,23 @@
+
+public class No_18 {
+    public static void main(String[] args) {
+        String str1 = "WX";
+        String str2 = "YZ";
+        int m = str1.length(), n = str2.length();
+        printInterleavings(str1, str2, "", m, n, 0, 0);
+    }
+    
+    public static void printInterleavings(String str1, String str2, String result, int m, int n, int i, int j) {
+        if (i == m && j == n) {
+            System.out.println(result);
+        } else if (i == m) {
+            printInterleavings(str1, str2, result + str2.charAt(j), m, n, i, j + 1);
+        } else if (j == n) {
+            printInterleavings(str1, str2, result + str1.charAt(i), m, n, i + 1, j);
+        } else {
+            printInterleavings(str1, str2, result + str1.charAt(i), m, n, i + 1, j);
+            printInterleavings(str1, str2, result + str2.charAt(j), m, n, i, j + 1);
+        }
+    }
+}
+

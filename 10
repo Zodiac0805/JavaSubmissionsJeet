@@ -1,0 +1,16 @@
+package com.Assignments;
+
+import java.util.Scanner;
+
+//Write a Java program that accepts an integer (n) and computes the value of
+//n+nn+nnn. Input number: 5
+//5 + 55 + 555 
+public class No_10 {
+public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter a number and it will be added (n+nn+nnn)");
+	String n = scan.nextLine();
+	String sum = n + (n+n)+(n+n+n);
+	System.out.println("Output is "+sum);
+}
+}

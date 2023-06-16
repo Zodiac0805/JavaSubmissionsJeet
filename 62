@@ -1,0 +1,37 @@
+package com.Assignments;
+
+import java.util.ArrayList;
+
+
+public class No_62 {
+	public static void main(String[] args) {
+		ArrayList<String> a1 = new ArrayList<String>();
+	
+		System.out.println("Default value is..."+a1);
+		
+		a1.add("Black");
+		a1.add("Blue");
+		a1.add("Red");
+		a1.add("Yellow");
+		a1.add("White");
+		a1.add("Green");
+		
+		a1.add(0,"Purple");
+		System.out.println("Now size is..."+a1.size());
+		System.out.println("Colours in the array list are..."+a1);
+		
+		   int size = a1.size();
+	        for (int i = 0; i < size / 2; i++) {
+	        	
+	            String reverse = a1.get(i);
+	            
+	            a1.set(i, a1.get(size - i - 1));
+	            
+	            a1.set(size - i - 1, reverse);
+	            
+	        }
+
+	       System.out.println("Reverse array list is..."+a1);
+	}
+
+}

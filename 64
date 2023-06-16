@@ -1,0 +1,24 @@
+package com.Assignments;
+
+import java.util.ArrayList;
+
+public class No_64 {
+    public static void main(String[] args) {
+        ArrayList<String> a1 = new ArrayList<>();
+        ArrayList<String> a2 = new ArrayList<>();
+
+        a1.add("Apple");
+        a1.add("Banana");
+        a1.add("Cherry");
+
+        a2.add("Apple");
+        a2.add("Banana");
+        a2.add("Cherry");
+
+        if (a1.equals(a2)) {
+            System.out.println("The two ArrayLists are equal");
+        } else {
+            System.out.println("The two ArrayLists are not equal");
+        }
+    }
+}

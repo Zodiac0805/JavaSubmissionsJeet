@@ -1,0 +1,26 @@
+package com.Assignments;
+
+import java.util.Scanner;
+
+public class No_13 {
+public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+	
+	System.out.println("Enter a String: ");
+	String str = scan.nextLine();
+	
+	System.out.println("Enter an index: ");
+	int a = scan.nextInt();
+	
+	if(a>=0 && a<str.length())
+	{
+		char c = str.charAt(a);
+		
+		System.out.println("The character at index "+a+" is "+c);
+		
+	}
+	else {
+		System.out.println("Index out of bounds");
+	}
+}
+}

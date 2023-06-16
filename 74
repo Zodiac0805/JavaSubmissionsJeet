@@ -1,0 +1,20 @@
+package com.Assignments;
+
+import java.util.HashMap;
+import java.util.Collection;
+
+public class No_74 {
+    public static void main(String[] args) {
+        HashMap<Integer, String> hm = new HashMap<>();
+
+       
+        hm.put(1, "Ahmedabad");
+        hm.put(2, "Baroda");
+        hm.put(3, "Surat");
+
+        
+        Collection<String> values = hm.values();
+
+        System.out.println("Collection view of the values is... " + values);
+    }
+}

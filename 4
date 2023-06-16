@@ -1,0 +1,27 @@
+package com.Assignments;
+
+import java.util.Scanner;
+
+//Write a Java program that takes a year from user and print whether that year is a leap
+//year or not. B19. Write a program in Java to display the first 10 natural numbers
+//using while loop.
+public class No_3_Java {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a year: ");
+		int year = scan.nextInt();
+		if(year%4 == 0)
+		{
+			System.out.println("Its a leap year");
+		}else
+		{
+			System.out.println("Its not a leap year");
+		}
+		System.out.println("First ten natural numbers are :");
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(i);
+		}
+	}
+
+}

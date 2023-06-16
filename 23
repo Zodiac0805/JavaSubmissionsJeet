@@ -1,0 +1,22 @@
+public class Parent {
+    public void parentMethod() {
+        System.out.println("This is a parent class");
+    }
+}
+
+public class Child extends Parent {
+    public void childMethod() {
+        System.out.println("This is a child class");
+    }
+}
+
+public class No_23 {
+    public static void main(String[] args) {
+        Parent parentObj = new Parent();
+        Child childObj = new Child();
+
+        parentObj.parentMethod();         
+        childObj.childMethod();           
+        childObj.parentMethod();
+    }
+}

@@ -1,0 +1,17 @@
+package com.Assignments;
+import java.util.HashSet;
+
+public class No_57 {
+    public static void main(String[] args) {
+        HashSet<String> names = new HashSet<String>();
+        names.add("Rutuj");
+        names.add("Vivek");
+        names.add("Ashish");
+
+        System.out.println("Before appending: " + names);
+
+        names.add("Patel");
+
+        System.out.println("After appending: " + names);
+    }
+}

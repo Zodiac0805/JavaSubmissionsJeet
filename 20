@@ -1,0 +1,45 @@
+public class PrintNumber {
+    public void printn(int n) {
+        System.out.println("Integer: " + n);
+    }
+    
+    public void printn(double n) {
+        System.out.println("Double: " + n);
+    }
+    
+    public void printn(float n) {
+        System.out.println("Float: " + n);
+    }
+    
+    public void printn(long n) {
+        System.out.println("Long: " + n);
+    }
+    
+    public void printn(short n) {
+        System.out.println("Short: " + n);
+    }
+    
+    public void printn(byte n) {
+        System.out.println("Byte: " + n);
+    }
+    
+    public void printn(char n) {
+        System.out.println("Char: " + n);
+    }
+    
+    public void printn(boolean n) {
+        System.out.println("Boolean: " + n);
+    }
+    
+    public static void main(String[] args) {
+        PrintNumber obj = new PrintNumber();
+        obj.printn(10);
+        obj.printn(3.14);
+        obj.printn(2.0f);
+        obj.printn(10000000000L);
+        obj.printn((short) 2);
+        obj.printn((byte) 1);
+        obj.printn('a');
+        obj.printn(true);
+    }
+}

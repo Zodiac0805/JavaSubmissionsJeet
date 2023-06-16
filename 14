@@ -1,0 +1,16 @@
+package com.Assignments;
+
+import java.util.Scanner;
+
+public class No_14 {
+public static void main(String[] args) {
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter string 1:");
+	String str = scan.nextLine();
+	System.out.println("Enter string 2:");
+	String str1 = scan.nextLine();
+	 String concate = str1 + " " +str;
+	 System.out.println(concate);
+	
+}
+}

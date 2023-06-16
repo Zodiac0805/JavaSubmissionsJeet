@@ -1,0 +1,11 @@
+package com.Assignments;
+
+public class No_16 {
+public static void main(String[] args) {
+	String st = "Java Exercises";
+	String str = "Java Exercise";
+	
+	boolean end = st.endsWith(str);
+	System.out.println(end);
+}
+}

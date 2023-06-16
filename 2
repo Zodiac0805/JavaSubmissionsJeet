@@ -1,0 +1,22 @@
+public class No_2 { 
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a single character from the alphabet");
+		char alphabet = scan.next().charAt(0);
+		if( Character.isDigit(alphabet))
+		{
+			System.out.println("Error. Please enter a character...");
+			return;
+			
+		}
+		if(alphabet=='a'||alphabet=='e'||alphabet=='i'||alphabet=='o'||alphabet=='u'||alphabet=='A'||alphabet=='E'||alphabet=='I'||alphabet=='O'||alphabet=='U')
+		{
+			System.out.println("The character " +alphabet+ " is a vowel.");
+		}else if(alphabet!='a'||alphabet!='e'||alphabet!='i'||alphabet!='o'||alphabet!='u'||alphabet!='A'||alphabet!='E'||alphabet!='I'||alphabet!='O'||alphabet!='U')
+		{
+			System.out.println("The character "+alphabet+" is a consonant.");
+		} 
+	}
+
+}

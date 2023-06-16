@@ -1,0 +1,17 @@
+public class AreaCalculator {
+    public void calculateArea(int side) {
+        int area = side * side;
+        System.out.println("Area of square: " + area);
+    }
+    
+    public void calculateArea(int length, int breadth) {
+        int area = length * breadth;
+        System.out.println("Area of rectangle: " + area);
+    }
+    
+    public static void main(String[] args) {
+        AreaCalculator obj = new AreaCalculator();
+        obj.calculateArea(5);             // calculates area of square with side 5
+        obj.calculateArea(4, 6);          // calculates area of rectangle with length 4 and breadth 6
+    }
+}

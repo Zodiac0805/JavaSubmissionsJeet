@@ -1,0 +1,16 @@
+public class PrintNumberChar {
+    public void print(int num, char ch) {
+        System.out.println(num + " " + ch);
+    }
+    
+    public void print(char ch, int num) {
+        System.out.println(ch + " " + num);
+    }
+    
+    public static void main(String[] args) {
+        PrintNumberChar obj = new PrintNumberChar();
+        obj.print(10, 'a');
+        obj.print('b', 20);
+    }
+}
+

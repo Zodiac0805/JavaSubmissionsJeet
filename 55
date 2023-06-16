@@ -1,0 +1,18 @@
+package com.Assignments;
+
+import java.util.ArrayList;
+
+public class No_55 {
+    public static void main(String[] args) {
+        ArrayList<String> originalList = new ArrayList<String>();
+        originalList.add("apple");
+        originalList.add("banana");
+        originalList.add("orange");
+
+        ArrayList<String> copyList = new ArrayList<String>();
+        copyList.addAll(originalList);
+
+        System.out.println("Original list: " + originalList);
+        System.out.println("Copy list: " + copyList);
+    }
+}

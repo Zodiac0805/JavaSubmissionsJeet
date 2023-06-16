@@ -1,0 +1,22 @@
+package com.Assignments;
+
+import java.util.ArrayList;
+
+public class No_70 {
+    public static void main(String[] args) {
+        ArrayList<String> a1 = new ArrayList<>(3);
+
+        
+        a1.add("Green");
+        a1.add("Yellow");
+        a1.add("Black");
+
+      
+        System.out.println("Original size of the ArrayList is... " + a1.size());
+
+        a1.ensureCapacity(6);
+        a1.add("Blue");
+
+        System.out.println("Now size of the ArrayList is... " + a1.size());
+    }
+}
